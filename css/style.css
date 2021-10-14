@@ -315,6 +315,35 @@ select {
   left: 0;
 }
 
+.c-close {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.c-close span {
+  position: absolute;
+  background-color: #707070;
+  height: 2px;
+  width: 50%;
+  display: inline-block;
+  left: calc(-50%/2 + 50px/2);
+}
+
+.c-close span:nth-of-type(1) {
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.c-close span:nth-of-type(2) {
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .p-content__upper {
   background-image: url(../image/takeout.png);
   background-repeat: no-repeat;
@@ -448,6 +477,10 @@ select {
 .p-map__textlayer {
   padding: 40px;
   width: 100%;
+}
+
+.p-sidebar__close {
+  margin: 0,0,0,auto;
 }
 
 .u-margintop {
