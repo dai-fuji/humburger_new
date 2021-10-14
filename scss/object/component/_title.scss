@@ -1,0 +1,31 @@
+.c-title{
+    color: $font-color-white;
+}
+
+.c-title--header{
+    color: $font-color-gray;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.c-title--caption{
+    font-size: $font-size-caption-bg;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.c-title--hero{
+    font-size: $font-size-caption-bg;
+}
+
+.c-title--underline{
+    position: relative;
+    &::after{
+        content: "";
+        display: inline-block;
+        border-top: 4px solid #FFF;
+        width: 10%;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+    }
+}

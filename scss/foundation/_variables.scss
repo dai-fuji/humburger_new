@@ -1,0 +1,24 @@
+
+
+//background-color--------------------------------------
+$background-color-header:#FFF7EF;
+$background-color-content:#FFF;
+$background-color-gradation:linear-gradient( #F2EDE9, #DED8D3);
+
+//font-color--------------------------------------
+$font-color-white:#FFF;
+$font-color-gray:#707070;
+$font-color-brown:#3C2A10;
+$font-color-black:#000;
+
+//font-size--------------------------------------
+$font-size-body:16px;
+$font-size-caption-bg:2rem;
+$font-size-caption-md:1.5rem;
+$font-size-text:1rem;
+
+//breakpoint--------------------------------------
+$breakpoint-up: ( 
+    'tab': 'screen and (min-width: 1025px)',
+    'pc': 'screen and (min-width: 1201px)',
+) ;

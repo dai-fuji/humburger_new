@@ -1,0 +1,52 @@
+.p-content{
+
+
+
+    &__upper{
+        background-image: url(../image/takeout.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+        // &::before{
+        //     content:"";
+        //     padding-top: 50%;
+        //     display: block;
+        // }
+    
+    // &__upper{
+    //     position: relative;
+    //     padding: 10px;
+    //     &::before{
+    //         content:"";
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         padding-top: 190%;
+    //         display: block;
+    //         background-image: url(../image/takeout.png);
+    //         background-repeat: no-repeat;
+    //         background-position:center;
+    //         background-size: cover;
+    //     }
+
+    }
+    &__lower{
+        background-image: url(../image/eatin.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+}
+.p-definitions{
+    padding-top: 50vw;
+
+
+}

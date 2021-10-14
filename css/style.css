@@ -1,0 +1,456 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.l-footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.l-header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 15px 40px 15px;
+}
+
+.l-content {
+  padding: 5vw;
+}
+
+.c-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
+  background: linear-gradient(#F2EDE9, #DED8D3);
+  border-radius: 10px;
+  border: 1px solid #707070;
+  height: 46px;
+  min-width: 76px;
+  color: #707070;
+}
+
+.c-button--menu {
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  background: initial;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.c-definition {
+  color: #3C2A10;
+}
+
+.c-definition__title {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.c-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-flex--header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5vw;
+}
+
+.c-flex--content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5vw;
+}
+
+.c-flex--menu {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.c-flex--definition {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.c-icon {
+  background-image: url(../image/serch-icon.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 50px;
+}
+
+.c-input {
+  border-radius: 10px;
+  border: 1px solid #707070;
+  height: 46px;
+  min-width: 230px;
+}
+
+.c-text {
+  color: #FFF;
+  line-height: 33px;
+  width: 100%;
+}
+
+.c-title {
+  color: #FFF;
+}
+
+.c-title--header {
+  color: #707070;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.c-title--caption {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.c-title--hero {
+  font-size: 2rem;
+}
+
+.c-title--underline {
+  position: relative;
+}
+
+.c-title--underline::after {
+  content: "";
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  width: 10%;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.p-content__upper {
+  background-image: url(../image/takeout.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.p-content__lower {
+  background-image: url(../image/eatin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+}
+
+.p-definitions {
+  padding-top: 50vw;
+}
+
+.p-definition {
+  padding: 20px 10px 45px 10px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.p-footer {
+  background-image: url(../image/fotter.png);
+  background-repeat: repeat;
+  height: 150px;
+  width: 100%;
+}
+
+.p-footer__menu, .p-footer__copyright {
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
+.p-footer__menu__item {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 5px;
+}
+
+.p-footer__menu__item:nth-child(odd)::after {
+  content: "|";
+  display: inline-block;
+  position: absolute;
+  left: 100%;
+}
+
+.p-footer__copyright {
+  padding-top: 34px;
+}
+
+.p-header {
+  background-color: #FFF7EF;
+}
+
+.p-header__menu {
+  font-size: 1rem;
+}
+
+.p-header__title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.p-header__serch {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.p-hero {
+  background-image: url(../image/hero-sp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 285px;
+  line-height: 285px;
+  padding-left: 5%;
+}
+
+.p-map {
+  width: 100%;
+}
+
+.p-map__bottom {
+  background: #000;
+  width: 100%;
+}
+
+.p-map__middle {
+  width: 100%;
+  position: relative;
+}
+
+.p-map__middle::after {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  content: "";
+  width: 100%;
+  background-image: url(../image/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.p-map__top {
+  background: rgba(0, 0, 0, 0.3);
+  height: 50%;
+  width: 100%;
+}
+
+.p-map__textlayer {
+  padding: 40px;
+  width: 100%;
+}
+
+.u-margintop {
+  margin-top: 40px;
+}
+/*# sourceMappingURL=style.css.map */

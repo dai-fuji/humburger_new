@@ -1,0 +1,32 @@
+.p-footer{
+    background-image:url(../image/fotter.png);
+    background-repeat: repeat;
+    height: 150px;
+    width: 100%;
+    
+
+    &__menu,&__copyright{
+        text-align: center;
+        display: block;
+        color: #fff;
+    }
+    &__menu__item{
+        text-decoration: none;
+        color: #fff;
+        position:relative;
+        padding:5px;
+        
+    }
+    &__menu__item:nth-child(odd)::after{
+        content:"|";
+        display: inline-block;
+        position: absolute;
+        left:100%;
+        
+    }
+
+    &__copyright{
+        padding-top: 34px;
+
+    }
+}

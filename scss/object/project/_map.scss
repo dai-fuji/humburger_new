@@ -1,0 +1,38 @@
+.p-map{
+    width: 100%;
+    &__bottom{
+        background:#000;
+        width: 100%;
+    }
+    &__middle{
+        width: 100%;
+        position:relative;
+    }
+
+    &__middle::after{
+        position:absolute;
+        top:0;
+        height: 100%;
+        content: "";
+        width: 100%;
+        background-image: url(../image/map.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        opacity: 0.5;
+        
+        
+    }
+    
+    &__top{
+        background:rgba(0,0,0,0.3);
+        height: 50%;
+        width: 100%;
+    }
+
+    &__textlayer{
+        padding:40px;
+        width: 100%;
+    }
+
+}

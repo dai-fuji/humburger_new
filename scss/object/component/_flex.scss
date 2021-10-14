@@ -1,0 +1,19 @@
+.c-flex{
+    display: flex;
+    &--header{
+        flex-direction: column;
+        gap: 5vw;
+    }
+    &--content{
+        flex-direction: column;
+        gap: 5vw;
+    }
+    &--menu{
+        flex-direction: row-reverse;
+
+    }
+    &--definition{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
