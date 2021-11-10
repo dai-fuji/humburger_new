@@ -1,9 +1,9 @@
 .c-close{
     width: 50px;
     height: 50px;
-    background-color: #fff;
     position: relative;
     cursor: pointer;
+    float:right;
     span {
         position: absolute;
         background-color: $font-color-gray;

@@ -191,6 +191,10 @@ select {
   padding: 5vw;
 }
 
+.l-sidebar {
+  width: 100%;
+}
+
 .c-button {
   background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
   background: linear-gradient(#F2EDE9, #DED8D3);
@@ -282,6 +286,76 @@ select {
   width: 100%;
 }
 
+.c-text--brown {
+  color: #3C2A10;
+}
+
+.l-sidebar {
+  padding-bottom: 100px;
+  width: 90%;
+  margin-left: 10%;
+}
+
+.p-sidebar {
+  background-color: #F2EDE9;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  visibility: hidden;
+  z-index: 999;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  overflow: auto;
+}
+
+.p-sidebar__menu {
+  padding-top: 100px;
+}
+
+.c-menu {
+  padding-top: 38px;
+  padding-left: 50px;
+}
+
+.c-menu li {
+  padding-left: 20px;
+  color: #3C2A10;
+  list-style: none;
+}
+
+.c-menu li:not(:first-child) {
+  padding-top: 23px;
+}
+
+.c-menu li:first-child {
+  padding-top: 38px;
+}
+
+.c-background {
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  visibility: hidden;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.is-open {
+  visibility: visible;
+  left: 0;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.is-fixed {
+  position: fixed;
+}
+
 .c-title {
   color: #FFF;
 }
@@ -318,9 +392,9 @@ select {
 .c-close {
   width: 50px;
   height: 50px;
-  background-color: #fff;
   position: relative;
   cursor: pointer;
+  float: right;
 }
 
 .c-close span {
@@ -446,35 +520,41 @@ select {
 }
 
 .p-map__bottom {
+  position: absolute;
   background: #000;
   width: 100%;
+  z-index: -1;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .p-map__middle {
-  width: 100%;
-  position: relative;
-}
-
-.p-map__middle::after {
   position: absolute;
   top: 0;
-  height: 100%;
-  content: "";
-  width: 100%;
   background-image: url(../image/map.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
 }
 
 .p-map__top {
+  position: absolute;
   background: rgba(0, 0, 0, 0.3);
   height: 50%;
+  z-index: -1;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .p-map__textlayer {
+  position: relative;
   padding: 40px;
   width: 100%;
 }
