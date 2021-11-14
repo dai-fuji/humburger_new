@@ -7,4 +7,19 @@
     height: 285px;
     line-height: 285px;
     padding-left: 5%;
+    
+    @include mq-up(pc){
+        height: 530px;
+        line-height: 530px;
+        background-image: url(../image/hero-pc.png);
+    }
+    &__title{
+        font-size:$font-size-page-title-sp;
+        @include mq-up(tab){
+            font-size:$font-size-page-title-tab;
+        }
+        @include mq-up(pc){
+            font-size:$font-size-page-title-pc;
+        }
+    }
 }

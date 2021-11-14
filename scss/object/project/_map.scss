@@ -1,48 +1,13 @@
-// .p-map{
-//     width: 100%;
-//     &__bottom{
-//         background:#000;
-//         width: 100%;
-//     }
-//     &__middle{
-//         width: 100%;
-//         position:relative;
-//     }
-
-//     &__middle::after{//地図
-//         position:relative;
-//         top:0;
-//         height: 100%;
-//         content: "";
-//         width: 100%;
-//         background-image: url(../image/map.png);
-//         background-repeat: no-repeat;
-//         background-size: cover;
-//         background-position:center;
-//         opacity: 0.5;
-        
-        
-//     }
-    
-//     &__top{
-//         position:absolute;
-//         background:rgba(0,0,0,0.3);
-//         height: 50%;
-//         width: 100%;
-//         z-index:10;
-//     }
-
-//     &__textlayer{
-//         position: relative;
-//         padding:40px;
-//         width: 100%;
-//         z-index:10;
-//     }
-
-// }
-
 .p-map{
     width: 100%;
+    &__textlayer{
+        position: relative;
+        padding:40px;
+        width: 100%;
+        @include mq-up(pc){
+            padding-right:45%;
+        }
+    }
     &__bottom{
         position: absolute;
         background:#000;
@@ -52,7 +17,7 @@
         top:0;
         left:0;
     }
-    &__middle{
+    &__middle{//地図
         position:absolute;
         top:0;
         background-image: url(../image/map.png);
@@ -65,9 +30,8 @@
         z-index:-1;
         left:0;
     }
-
     
-    &__top{
+    &__top{//透過グレー背景
         position:absolute;
         background:rgba(0,0,0,0.3);
         height: 50%;
@@ -75,13 +39,25 @@
         width: 100%;
         top:0;
         left:0;
+        @include mq-up(tab){
+            height:100%;
+        }
+        @include mq-up(pc){
+            width:60%;
+
+        }
+    }
+    &__title{
+        font-size:$font-size-caption-title-sp;
+        @include mq-up(tab){
+            font-size:$font-size-caption-title-tab;
+        }
+        @include mq-up(pc){
+            font-size:$font-size-caption-title-pc;
+        }
     }
 
-    &__textlayer{
-        position: relative;
-        padding:40px;
-        width: 100%;
 
-    }
+
 
 }

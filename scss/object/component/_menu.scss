@@ -1,0 +1,21 @@
+.c-menu{
+
+    padding-top: 38px;
+    padding-left: 50px;
+
+
+    li{
+        padding-left: 20px;
+        color:$font-color-brown;
+        list-style: none;
+        
+    }
+    li:not(:first-child){
+        padding-top: 23px;
+    }
+    li:first-child{
+        padding-top: 38px;
+    }
+    
+
+}

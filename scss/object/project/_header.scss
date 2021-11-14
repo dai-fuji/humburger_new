@@ -1,15 +1,25 @@
 .p-header{
     background-color: #FFF7EF;
-    
+    @include mq-up(pc){
+        display: flex;
+        align-items: center;
+    }
     &__menu{
         font-size: $font-size-text;
     }
 
     &__title{
+        display:block;
         margin: 0 auto;
         text-align: center;
-        font-size:40px;
-        
+        font-size:$font-size-title-sp;
+        @include mq-up(tab){
+            font-size:$font-size-title-tab;
+        }
+        @include mq-up(pc){
+            font-size:$font-size-title-pc;
+        }
+
     }
 
 }
@@ -17,4 +27,8 @@
     margin: 0 auto;
     text-align: center;
     width:100%;//temp
+    @include mq-up(pc){
+        text-align: right;
+    }
+    
 }

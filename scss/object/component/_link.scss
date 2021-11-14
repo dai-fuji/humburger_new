@@ -1,0 +1,10 @@
+.c-link{
+    text-decoration: none;
+    &--white{
+        color:$font-color-white;
+    }
+    &--gray{
+        color:$font-color-gray;
+    }
+    
+}

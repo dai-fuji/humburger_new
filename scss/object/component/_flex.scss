@@ -3,10 +3,18 @@
     &--header{
         flex-direction: column;
         gap: 5vw;
+        @include mq-up(pc){
+            flex-direction: unset;
+            width:100%;
+        }
     }
     &--content{
         flex-direction: column;
         gap: 5vw;
+        @include mq-up(tab){
+            flex-direction: unset;
+            justify-content: space-between;
+        }
     }
     &--menu{
         flex-direction: row-reverse;

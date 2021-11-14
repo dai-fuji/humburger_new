@@ -12,29 +12,27 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>ハンバーガーサイト</title>
 </head>
-<body>
-
+<body class="c-grid">
+    <!-- ヘッダー -->
+    <header class="l-header p-header" >
+        <div class="c-flex c-flex--menu">
+            <button class="p-header__menu c-button c-button--menu">Menu</button>
+        </div>
+        <div class="c-flex c-flex--header">
+            <h1><a href="" class="p-header__title c-title c-title--header">Hamburger</a></h1>
+            <form action="" method="post" class="p-header__serch">
+                <input type="search" name="search" placeholder="テスト" class="c-input c-icon u-margin-right"></input>
+                <input type="submit" name="submit" value="検索" class="p-header__serch__button c-button">
+            </form>
+        </div>
+    </header>
+    <!--ヒーロー画像 -->
     <main>
-        <!-- ヘッダー -->
-        <header class="l-header p-header" >
-            <div class="c-flex c-flex--menu">
-                <button class="p-header__menu c-button c-button--menu">Menu</button>
-            </div>
-            <div class="c-flex c-flex--header">
-                <h1 class="p-header__title c-title c-title--header">Hamburger</h1>
-                <form action="" method="post" class="p-header__serch">
-                    <input type="search" name="search" placeholder="テスト" class="c-input c-icon u-margin-right"></input>
-                    <input type="submit" name="submit" value="検索" class="p-header__serch__button c-button">
-                </form>
-            </div>
-        </header>
-        
-        <!--ヒーロー画像 -->
-        <h2 class="p-hero c-title c-title--hero">ダミーサイト</h2>
+        <h2 class="p-hero p-hero__title c-title c-title--hero">ダミーサイト</h2>
         <!--コンテンツ -->
         <article class="l-content p-content c-flex c-flex--content">
             <section class="p-content__upper">
-                <h3 class="c-title c-title--caption c-title--underline">Take Out</h3>
+                <h3 class=" p-content__title c-title c-title--caption c-title--underline">Take Out</h3>
                 <div class="p-definitions c-flex c-flex--definition">
                     <div class="p-definition">
                         <dl class="c-definition">
@@ -51,7 +49,7 @@
                 </div>
             </section>
             <section class="p-content__lower">
-                <h3 class="c-title c-title--caption c-title--underline">Eat In</h3>
+                <h3 class="p-content__title c-title c-title--caption c-title--underline">Eat In</h3>
                 <div class="p-definitions  c-flex c-flex--definition">
                     <div class="p-definition">
                         <dl class="c-definition">
@@ -68,11 +66,10 @@
                 </div>
             </section>
         </article>
-
-
+        <!-- 地図 -->
         <div class="p-map">
             <div class="p-map__textlayer">
-                <h2 class="c-title c-title--caption c-title--underline">見出しがはいります</h2>
+                <h2 class="p-map__title c-title c-title--caption c-title--underline">見出しがはいります</h2>
                 <p class="c-text u-margintop">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
@@ -82,54 +79,48 @@
                 <div class="p-map__top"></div>
             </div>
         </div>
-        <!-- ここまで -->
-
-
-        <!-- フッター -->
-        <footer class="p-footer l-footer">
-            <nav class="p-footer__menu">
-                <a class="p-footer__menu__item" href="">ショップ情報</a>
-                <a class="p-footer__menu__item" href="">ヒストリー</a>
-            </nav>
-            <small class="p-footer__copyright">Copyright: RaiseTech</small>
-        </footer>
-        <div class="c-background is-open"></div>
     </main>
-        <!-- サイドバー -->
-    
-    <aside class="l-sidebar p-sidebar is-open">
-    
-        <div class="p-sidebar__botton c-close">
-            <span></span>
-            <span></span>
-        </div>
-
-        <div class="p-sidebar__menu">
-            <ul class="c-menu">バーガー
-                <li>バーガー</li>
-                <li>バーガー</li>
-                <li>バーガー</li>
-                <li>バーガー</li>
-                <li>バーガー</li>
-                <li>バーガー</li>
-                <li>バーガー</li>
+    <!-- サイドバー -->
+    <div class="c-background"></div>
+    <aside class="l-sidebar p-sidebar">
+        <div class="p-sidebar__button c-button-close"><span></span><span></span></div>
+        <nav class="p-sidebar__menu">
+            <ul class="c-menu c-link c-link--gray">バーガー
+                <li><a class="c-link c-link--gray" href="">バーガー</a></li>
+                <li><a class="c-link c-link--gray" href="">バーガー</a></li>
+                <li><a class="c-link c-link--gray" href="">バーガー</a></li>
+                <li><a class="c-link c-link--gray" href="">バーガー</a></li>
+                <li><a class="c-link c-link--gray" href="">バーガー</a></li>
+                <li><a class="c-link c-link--gray" href="">バーガー</a></li>
+                <li><a class="c-link c-link--gray" href="">バーガー</a></li>
             </ul>
-            <ul class="c-menu">サイド
-                <li>ポテト</li>
-                <li>サラダ</li>
-                <li>ナゲット</li>
-                <li>コーン</li>
+            <ul class="c-menu c-link c-link--gray">サイド
+                <li><a class="c-link c-link--gray" href="">ポテト</a></li>
+                <li><a class="c-link c-link--gray" href="">サラダ</a></li>
+                <li><a class="c-link c-link--gray" href="">ナゲット</a></li>
+                <li><a class="c-link c-link--gray" href="">コーン</a></li>
             </ul>
-            <ul class="c-menu">ドリンク
-                <li>コーラ</li>
-                <li>ファンタ</li>
-                <li>オレンジ</li>
-                <li>アップル</li>
-                <li>紅茶（Ice/Hot）</li>
-                <li>コーヒー（Ice/Hot）</li>
+            <ul class="c-menu c-link c-link--gray">ドリンク
+                <li><a class="c-link c-link--gray" href="">コーラ</a></li>
+                <li><a class="c-link c-link--gray" href="">ファンタ</a></li>
+                <li><a class="c-link c-link--gray" href="">オレンジ</a></li>
+                <li><a class="c-link c-link--gray" href="">アップル</a></li>
+                <li><a class="c-link c-link--gray" href="">紅茶（Ice/Hot）</a></li>
+                <li><a class="c-link c-link--gray" href="">コーヒー（Ice/Hot）</a></li>
             </ul>
-        </div>
+        </nav>
     </aside>
+    <!-- フッター -->
+    <footer class="p-footer l-footer">
+        <nav class="p-footer__menu">
+            <a class="p-footer__menu__item c-link c-link--white" href="">ショップ情報</a>
+            <a class="p-footer__menu__item c-link c-link--white" href="">ヒストリー</a>
+        </nav>
+        <small class="p-footer__copyright">Copyright: RaiseTech</small>
+    </footer>
+    
+    
+
     
 
 

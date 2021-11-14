@@ -13,15 +13,27 @@ $font-color-brown:#3C2A10;
 $font-color-black:#000;
 
 //font-size--------------------------------------
-$font-size-body:16px;
-$font-size-caption-bg:2rem;
-$font-size-caption-md:1.5rem;
+$font-size-title-sp:2.25rem;
+$font-size-title-tab:2.25rem;
+$font-size-title-pc:4rem;
+
+$font-size-page-title-sp:2.25rem;
+$font-size-page-title-tab:2.25rem;
+$font-size-page-title-pc:2.5rem;
+
+$font-size-article-title-sp:2.25rem;
+$font-size-article-title-tab:2.25rem;
+$font-size-article-title-pc:4rem;
+
+$font-size-caption-title-sp:1.875rem;
+$font-size-caption-title-tab:1.875rem;
+$font-size-caption-title-pc:2.25rem;
+
+
 $font-size-text:1rem;
-
-
 
 //breakpoint--------------------------------------
 $breakpoint-up: ( 
-    'tab': 'screen and (min-width: 1025px)',
+    'tab': 'screen and (min-width: 834px)',
     'pc': 'screen and (min-width: 1201px)',
 ) ;

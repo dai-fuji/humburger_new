@@ -1,0 +1,16 @@
+
+.c-background{
+    background-color: #000;
+    opacity: 0.5;
+    width: 0%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    visibility: hidden;
+}
+.c-background.is-open{
+    visibility:visible;
+    width: 100%;
+}

@@ -1,4 +1,4 @@
-@mixin mq-up($breakpoint: sp) {
+@mixin mq-up($breakpoint) {
     @media #{map-get($breakpoint-up, $breakpoint)} {
         @content;
     }

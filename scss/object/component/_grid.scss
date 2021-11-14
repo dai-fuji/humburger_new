@@ -1,0 +1,21 @@
+.c-grid{
+
+    @include mq-up(pc){
+        display:grid;
+        grid-template:
+        "header aside" 217px
+        "main aside" 1fr
+        "footer footer" 150px
+        / 1fr  20%;
+    }
+
+}
+main{
+    grid-area:main;
+}
+aside{
+    grid-area:aside;
+}
+footer{
+    grid-area:footer;
+}
