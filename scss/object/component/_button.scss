@@ -9,6 +9,7 @@
     @include mq-up(tab){
         width:136px ;
     }
+
     &--menu{
         font-weight: bold;
         height:30px ;
@@ -37,6 +38,9 @@
     position: relative;
     cursor: pointer;
     float:right;
+    @include mq-up(pc){
+        display: none;
+    }
     span {
         position: absolute;
         background-color: $font-color-gray;

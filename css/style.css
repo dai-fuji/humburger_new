@@ -206,6 +206,12 @@ a {
   margin-left: 10%;
 }
 
+@media screen and (min-width: 834px) {
+  .l-sidebar {
+    margin-left: 54%;
+  }
+}
+
 @media screen and (min-width: 1201px) {
   .l-sidebar {
     margin: unset;
@@ -256,6 +262,12 @@ a {
   position: relative;
   cursor: pointer;
   float: right;
+}
+
+@media screen and (min-width: 1201px) {
+  .c-button-close {
+    display: none;
+  }
 }
 
 .c-button-close span {
@@ -309,6 +321,9 @@ a {
         -ms-flex-direction: unset;
             flex-direction: unset;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -358,15 +373,8 @@ a {
   border-radius: 10px;
   border: 1px solid #707070;
   height: 46px;
-  min-width: 230px;
-  width: 230px;
-}
-
-@media screen and (min-width: 834px) {
-  .c-input {
-    max-width: 396px;
-    width: 396px;
-  }
+  max-width: 396px;
+  width: 70%;
 }
 
 .c-text {
@@ -392,6 +400,12 @@ a {
 .c-title--caption {
   color: #FFF;
   font-family: 'Roboto', sans-serif;
+}
+
+.c-title--menu {
+  color: #707070;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.125rem;
 }
 
 .c-title--underline {
@@ -727,7 +741,7 @@ footer {
 
 @media screen and (min-width: 1201px) {
   .p-map__title {
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 }
 
@@ -764,20 +778,37 @@ footer {
   overflow-y: auto;
 }
 
+@media screen and (min-width: 834px) {
+  .p-sidebar.is-open {
+    width: 46%;
+  }
+}
+
 @media screen and (min-width: 1201px) {
   .p-sidebar.is-open {
     width: 100%;
   }
 }
 
-.p-sidebar__menu {
+.p-sidebar__menu-list {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 @media screen and (min-width: 1201px) {
-  .p-sidebar__menu {
+  .p-sidebar__menu-list {
     margin: unset;
+  }
+}
+
+.p-sidebar__menu-title {
+  display: none;
+}
+
+@media screen and (min-width: 1201px) {
+  .p-sidebar__menu-title {
+    display: block;
+    padding-left: 50px;
   }
 }
 

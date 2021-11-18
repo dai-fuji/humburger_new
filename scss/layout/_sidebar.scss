@@ -1,5 +1,8 @@
 .l-sidebar{
     margin-left: 10%;
+    @include mq-up(tab){
+        margin-left: 54%;
+    }
     @include mq-up(pc){
         margin:unset;
     }

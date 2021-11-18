@@ -6,6 +6,7 @@
         @include mq-up(pc){
             flex-direction: unset;
             width:100%;
+            align-items: center;
         }
     }
     &--content{

@@ -12,10 +12,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-.c-title--hero{
-    
+.c-title--menu{
+    color: $font-color-gray;
+    font-family: 'Roboto', sans-serif;
+    font-size:$font-size-caption-title-pc;
 }
+
+
 
 .c-title--underline{
     position: relative;
